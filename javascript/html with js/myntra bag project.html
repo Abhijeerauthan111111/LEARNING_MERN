@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Myntra bag project
+
+    </title>
+    <link rel="stylesheet" href="styles/myntra bag project.css">
+</head>
+<body>
+    <div id="exercise">
+        <div id="container">
+            <button onclick="add1()" class="button" id="addtobag" > Add To Bag </button>
+            <button onclick="sub1()" class="button" id="wishlist"> ❤️Move To Wishlist </button>
+            <button onclick="add2()" class="button" id="sale">Add 1+1 sale item</button>
+            <button onclick="remove()" id="remove">🗑️</button>
+            <br>
+            <div id="item">Your bag is empty</div>
+        </div>
+    </div>
+    <script>
+        var x =0;
+        
+      function add1(){
+        x=x+1;
+        console.log("1 item added to the bag");
+        document.getElementById("item").innerHTML= "Your bag has "+ x + " item";
+      }
+      function sub1(){
+        
+        if(x>0){
+            x=x-1;
+            document.getElementById("item").innerHTML= "Your bag has "+ x + " item";
+            console.log("1 item removed from the bag");
+            
+        }
+        else{
+            console.log("Bag is already empty");
+        }
+        
+      }
+      function add2(){
+        x=x+2;
+        document.getElementById("item").innerHTML= "Your bag has "+ x + " item";
+        console.log("2 item added to the bag");
+      }
+      function remove(){
+        console.log("All the items removed from the bag");
+        x=0;
+        document.getElementById("item").innerHTML= "Your bag has "+ x + " item";
+      }
+    </script>
+</body>
+</html> 

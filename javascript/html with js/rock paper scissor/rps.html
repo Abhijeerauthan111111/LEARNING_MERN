@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper scissor</title>
+    <link rel="stylesheet" href="style/rps.css">
+    <script src="rps.js"></script>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <div class="game-name">Rock ✂ Paper 📜 Scissors 🪨</div>
+            <div class="score">
+                <div class="scoreplayer">Player: 0</div>
+                <div class="scorecomputer">Computer: 0</div>
+                <div class="scoretie">Tie: 0</div>
+            </div>
+            <div class="your-weapon">
+                <button onclick="stone()" class="weapon stone">Stone🪨</button>
+                <button onclick="paper()" class="weapon paper">Paper📃</button>
+                <button onclick="scissor()" class="weapon scissor">Scissor✂️</button>
+            </div>
+            <div class="game-command">Choose Your Weapon Wisely</div>
+            <!-- <div class="computer-weapon" id="cw"></div> -->
+            <div class="result" id="res"></div>
+            <div><button onclick="tryagain()" class="try weapon">Try Again</button></div>
+            
+        </div>
+    </div>
+   
+</body>
+</html>  

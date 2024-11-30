@@ -1,0 +1,22 @@
+h1{
+    color: aqua;
+}
+
+ #heading{
+    color: orange;
+/*This is a comment in css*/
+}
+
+div{
+    color: blueviolet;
+}
+div #hid{
+    color: crimson;
+}
+div .pclass{
+    color: black;
+}
+
+#first,#second{
+color: gold;
+}

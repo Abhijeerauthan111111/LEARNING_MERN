@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty Claim Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .receipt {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            background-image: url(data:image/png;base64,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);
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .customer-details, .device-details, .issue-details, .warranty-info, .service-center, .terms-conditions, .acknowledgment, .warranty-verification {
+            margin-bottom: 20px;
+        }
+        .signature {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">
+            <h2>Warranty Claim Receipt</h2>
+        </div>
+        <div class="customer-details">
+            <h3>Customer Details:</h3>
+            <p><strong>Name:</strong> Abhijeet</p>
+            <p><strong>Phone Number:</strong> 9068027449</p>
+            <p><strong>Address:</strong> Chauhan Bhawan, Srinagar, Uttarakhand</p>
+        </div>
+        <div class="device-details">
+            <h3>Device Details:</h3>
+            <p><strong>Device Model:</strong> iQOO Neo 7</p>
+            <p><strong>IMEI/Serial Number:</strong> 2367 7846 3582 3562</p>
+        </div>
+        <div class="issue-details">
+            <h3>Issue Reported:</h3>
+            <p><strong>Problem Description:</strong> Motherboard issue</p>
+        </div>
+        <div class="warranty-info">
+            <h3>Warranty Information:</h3>
+            <p><strong>Warranty Status:</strong> In Warranty</p>
+            <p><strong>Warranty Period:</strong> 28th July 2023 - 27th July 2025</p>
+        </div>
+        <div class="service-center">
+            <h3>Service Center Details:</h3>
+            <p><strong>Company Name:</strong> Surya Communication Service Center</p>
+            <p><strong>Address:</strong> Upper Bazar, Near Hanuman Mandir, Srinagar Garhwal, Uttarakhand</p>
+            <p><strong>Contact Information:</strong> 97654 97654</p>
+            <p><strong>Email:</strong> suryacomm@iqoo.com</p>
+        </div>
+        <div class="terms-conditions">
+            <h3>Terms and Conditions:</h3>
+            <ul>
+                <li>The repair will be conducted under the terms of the warranty agreement.</li>
+                <li>Any additional issues identified during repair will be communicated for approval before proceeding.</li>
+            </ul>
+        </div>
+        <div class="warranty-verification">
+            <h3>Warranty Verification:</h3>
+            <p>To verify the warranty status of your iQOO Neo 7, please visit <a href="https://www.iqoo.com/support/warranty-verification">iQOO Warranty Verification</a>.</p>
+        </div>
+        <div class="acknowledgment">
+            <h3>Acknowledgment:</h3>
+            <p>I, Abhijeet, acknowledge receipt of this warranty claim document and authorize the repair of the mentioned device under the terms and conditions provided.</p>
+            <p><strong>Signature:</strong> Abhijeet Rauthan</p>
+        </div>
+    </div>
+</body>
+</html>

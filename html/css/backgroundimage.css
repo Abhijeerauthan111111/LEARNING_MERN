@@ -1,0 +1,40 @@
+.text {
+    height: 50px;
+    width : 519px;
+    font-size: 25px;
+}
+
+ #textbg1 {
+    color: aqua;
+    background-color: rgba(225,1,5,1);
+    background-image: url(../image/image.png) ;
+    background-size: 51px  50px;
+    background-repeat: repeat;
+    
+    
+    
+}
+
+#textbg2 {
+    color: rgb(23, 21, 225);
+    background: url(../image/image2.png)  no-repeat right ;
+    background-size: 319px 50px;
+    
+
+}
+
+#textbg3 {
+    background-color: rgba(10,1,225,1);
+    background: url(../image/image3.png) repeat  ;
+    background-size: 319px 50px ;
+    background-attachment:fixed;
+    height: 5000px;
+    color: rgba(128, 233, 9, 0.9);
+
+}
+#textbg4{
+    background: red url(../image/image.png) repeat center fixed;
+    background-size: auto;
+    height: auto;
+    color: blue;
+}

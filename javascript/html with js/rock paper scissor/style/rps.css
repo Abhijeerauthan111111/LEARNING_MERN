@@ -1,0 +1,155 @@
+.main{
+    background-color: #6e4302;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #e2be87;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 0 100px 50px rgba(225, 150, 107, 0.7);
+    
+    align-items: center;
+     min-height: 550px;
+    min-width: 800px ; 
+    
+    
+
+}
+.scorecomputer{
+display: inline;
+padding-left: 12.5px;
+padding-right: 12.5px;
+
+border: 1px solid black;
+margin: 0px 50px;
+font-size: 16px;
+border-radius: 8px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight: 500;
+box-shadow:  black 2px 5px 5px;
+background-color: #ffdaa3;
+
+}
+
+.scoreplayer{
+    display: inline;
+    padding-left: 28.5px;
+    padding-right: 28.5px;
+    border: 1px solid black;
+    margin: 0px 50px;
+    font-size: 16px;
+border-radius: 8px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight: 500;
+background-color: #ffdaa3;
+box-shadow:  black 2px 5px 5px;
+
+}
+.scoretie{
+    display: inline;
+    padding-left: 28.5px;
+    padding-right: 28.5px;
+    border: 1px solid black;
+    margin: 0px 50px;
+    font-size: 16px;
+border-radius: 8px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight: 500;
+background-color: #ffdaa3;
+box-shadow:  black 2px 5px 5px;
+
+}
+
+.weapon{
+    border-radius: 9px;
+    box-shadow:  black 2px 5px 5px;
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+    margin: 20px 30px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.weapon:hover{
+transform: translateY(-10px);
+}
+.your-weapon:hover > :not(:hover){
+    opacity: .3;
+}
+
+.stone{
+background-color: grey;
+}
+.stone:hover{
+    background-color: rgb(103, 103, 103);
+}
+
+
+.paper{
+    background-color: rgb(140, 205, 226);
+}
+.paper:hover{
+    background-color: rgb(69, 160, 190);
+}
+.scissor{
+ background-color:rgb(255, 255, 42) ;   
+}
+
+.scissor:hover{
+    background-color:rgb(210, 210, 33) ;   
+}
+
+
+.game-name{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 30px 50px 30px;
+}
+ 
+.your-weapon{
+    margin: 40px;
+}
+
+.game-command{
+font-size: 25px;
+margin: 25px;
+font-style:oblique;
+font-weight: 600;
+color: rgb(0, 0, 0);
+}
+
+
+.result{
+    font-size: 25px;
+    margin: 10px;
+    font-style:oblique;
+    font-weight: 600;
+    color: black;
+}
+.try{
+    background-color: rgb(240, 33, 33) ;
+     display:none; 
+}
+.try:hover{
+    background-color:  rgb(197, 29, 29) ;
+
+}
+.weapon:active{
+    box-shadow:  #e2be87 2px 5px 5px;
+    background-color:rgb(37, 152, 37) ;
+
+    
+}
+

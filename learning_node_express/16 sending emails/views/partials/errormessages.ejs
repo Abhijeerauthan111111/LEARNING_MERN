@@ -1,0 +1,27 @@
+<% if(typeof errormessages !== "undefined" && errormessages && errormessages.length > 0){%>
+    <div class="bg-red-100/80 backdrop-blur-sm rounded-xl p-6 border-2 border-red-200 shadow-lg animate-fade-in">
+        <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0">
+                <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-lg font-semibold text-red-800 mb-2">Please address the following:</h3>
+                <ul class="space-y-2">
+                    <% errormessages.forEach(err=>{ %>
+                        <li class="flex items-center text-red-700">
+                            <span class="inline-block w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span>
+                            <span class="text-sm"><%= err%></span>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+            <button type="button" class="text-red-400 hover:text-red-600 transition-colors" onclick="this.parentElement.parentElement.remove()">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+   <%}%>

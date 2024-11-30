@@ -1,0 +1,14 @@
+.heading{
+font-size: 20px;
+color: burlywood;
+
+}
+.para{
+color: aqua;
+font-size: 10px;
+}
+.butt{
+    color: aqua;
+    border-radius: 10px;
+    box-shadow: black 20px 20px 20px;
+}

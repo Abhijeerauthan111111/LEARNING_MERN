@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Carousel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 500px;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+
+        .carousel img {
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            transform-origin: center;
+        }
+
+        .carousel img {
+            width: 50px;
+            opacity: 0.5;
+        }
+
+        .carousel img:nth-child(1) {
+            transform: scale(0.5);
+        }
+
+        .carousel img:nth-child(2) {
+            transform: scale(0.75);
+        }
+
+        .carousel img:nth-child(3) {
+            transform: scale(2);
+            opacity: 1;
+        }
+
+        .carousel img:nth-child(4) {
+            transform: scale(0.75);
+        }
+
+        .carousel img:nth-child(5) {
+            transform: scale(0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="burger menu/assets/pngegg (1).png" alt="Burger 1">
+        <img src="burger menu/assets/pngegg (1).png" alt="Burger 2">
+        <img src="burger menu/assets/pngegg (1).png" alt="Burger 3">
+        <img src="burger menu/assets/pngegg (1).png" alt="Burger 4">
+        <img src="burger menu/assets/pngegg (1).png" alt="Burger 5">
+    </div>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        let index = 0;
+
+        carousel.addEventListener('click', () => {
+            index = (index + 1) % 5;
+            carousel.style.transform = `translateX(${-100 * index}px)`;
+
+            const imgs = document.querySelectorAll('.carousel img');
+            imgs.forEach((img, i) => {
+                img.style.transform = 'scale(0.5)';
+                img.style.opacity = '0.5';
+            });
+
+            const middleIndex = (index + 2) % 5;
+            const leftIndex = (index + 1) % 5;
+            const rightIndex = (index + 3) % 5;
+
+            imgs[middleIndex].style.transform = 'scale(2)';
+            imgs[middleIndex].style.opacity = '1';
+
+            imgs[leftIndex].style.transform = 'scale(0.75)';
+            imgs[rightIndex].style.transform = 'scale(0.75)';
+        });
+    </script>
+</body>
+</html>

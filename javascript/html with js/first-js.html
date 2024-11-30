@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>html and js</title>
+    <script>
+        console.log('Hello world');
+        function clickme(){
+         console.log('button clicked');
+         alert("Buttonclicked");
+        }
+        function changeme(){
+            document.getElementById('mypara').innerHTML = 'paragraphed changed';
+        }
+        function styleme(){
+            document.querySelector('#mypara').style.backgroundColor='red';
+        }
+        function normal(){
+          document.getElementById('mypara').innerHTML='This is a demo paragraph' ;  
+          document.getElementById('mypara').style.backgroundColor='inherit';
+        }
+
+    </script>
+    <style>
+        body{
+            
+        }
+    </style>
+</head>
+<body style="background-color: aqua;" >
+    <h1>Welcome to js</h1>
+    <p id="mypara">This is a demo paragraph</p>
+    <button onclick="clickme()">click me</button>
+    <button onclick="changeme()">change me</button>
+    <button onclick="styleme()">style me</button>
+    <button onclick="normal()">normal</button>
+
+</body>
+</html>

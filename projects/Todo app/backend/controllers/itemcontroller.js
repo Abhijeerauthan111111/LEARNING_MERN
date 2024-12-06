@@ -36,3 +36,15 @@ exports.deletetodoitem = async(req,res,next)=>{
     }
 
 }
+
+exports.updatetodoitem = async(req,res,next)=>{
+    try {
+        const id = req.params.id;
+        const updateditem = await Todoitem.findByIdAndUpdate(id,req.body,{new : true})
+        res.json(updateditem);
+
+    } catch (error) {
+        res.status(500).json({message: error})
+    }
+
+} 

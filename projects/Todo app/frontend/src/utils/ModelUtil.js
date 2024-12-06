@@ -4,5 +4,6 @@ export const todoItemToClientModel = (serverItem) => {
     todoText: serverItem.task,
     todoDate: serverItem.date,
     completed: serverItem.completed,
+    createdate: serverItem.createdate
   }
 }
